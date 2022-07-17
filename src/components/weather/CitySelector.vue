@@ -31,6 +31,7 @@ export default {
   methods: {
     selectCity(city) {
       city.selected = !city.selected;
+      this.$emit("selectCity", city);
     },
   },
 };
